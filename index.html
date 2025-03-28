@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Spices Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Organic Spices</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-warning text-dark ms-2" href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </div>
+        </div>
+        <li class="nav-item">
+            <a class="nav-link btn btn-warning text-dark ms-2" href="cart.html">
+                Cart (<span id="cart-count">0</span>)
+            </a>
+        </li>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container text-center text-white">
+            <h1 class="display-4">100% Organic Spices</h1>
+            <p class="lead">Fresh, Pure, and Natural Spices for a Healthy Lifestyle.</p>
+            <a href="products.html" class="btn btn-warning btn-lg">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- Featured Products -->
+    <section class="container py-5">
+        <h2 class="text-center text-success mb-4">Best Selling Spices</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/turmeric.jpg" class="card-img-top" alt="Turmeric">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Turmeric Powder</h5>
+                        <p class="text-muted">₹520.50</p>
+                        <button class="btn btn-warning add-to-cart" data-name="Turmeric Powder" data-price="520.50">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/cinnamon.jpg" class="card-img-top" alt="Cinnamon">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cinnamon Sticks</h5>
+                        <p class="text-muted">₹675.14</p>
+                        <button class="btn btn-warning add-to-cart" data-name="Cinnamon Sticks" data-price="675.14">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/coriander.jpg" class="card-img-top" alt="Coriander">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Coriander Seeds</h5>
+                        <p class="text-muted">₹514.89</p>
+                        <button class="btn btn-warning add-to-cart" data-name="Coriander Seeds" data-price="514.89">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-success text-white text-center py-3">
+        <p>&copy; 2025 Organic Spices. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

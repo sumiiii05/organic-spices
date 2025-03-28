@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background: url('images/banner.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #28a745;
+}
